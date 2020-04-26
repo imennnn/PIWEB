@@ -1,0 +1,45 @@
+{% extends "@Admin/Default/back.html.twig" %}
+
+{% block body %}
+
+    <div class="bs-example widget-shadow" data-example-id="contextual-table">
+        <h3> Liste des Fournisseurs:</h3>
+
+
+        <table class="table" border="2">
+            <tr>
+                <th>Cin</th>
+                <th>Email</th>
+                <th>Adresse</th>
+                <th>Téléphone</th>
+                <th>Fax</th>
+                <th>Nom de la societe</th>
+                <th>Suppression</th>
+                <th>Modification</th>
+            </tr>
+            {% for fournisseur in fournisseurs %}
+
+                <tr>
+
+                    <td>{{ fournisseur.cin }}</td>
+                    <td>{{ fournisseur.email }}</td>
+                    <td>{{ fournisseur.adresse }}</td>
+                    <td>{{ fournisseur.telephone }}</td>
+                    <td>{{ fournisseur.fax }}</td>
+                    <td>{{ fournisseur.nomSociete }}</td>
+
+
+                    <td><a href="{{ path("remove_Fournisseur",{'id':fournisseur.id})}}">Supprimer</td>
+
+
+                    <td><a href="{{ path("update_Fournisseur",{'id':fournisseur.id})}}">Modifier</td>
+                </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+{% endblock %}

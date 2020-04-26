@@ -1,0 +1,50 @@
+{% extends "@Admin/Default/back.html.twig" %}
+
+{% block body %}
+
+    <div class="bs-example widget-shadow" data-example-id="contextual-table">
+        <h3> Liste des Livreurs:</h3>
+
+
+        <table class="table" border="2">
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Ville</th>
+                <th>Téléphone</th>
+                <th>Suppression</th>
+                <th>Modification</th>
+            </tr>
+            {% for livreur in livreurs %}
+
+                <tr>
+
+                    <td>{{ livreur.nom }}</td>
+                    <td>{{ livreur.prenom }}</td>
+                    <td>{{ livreur.ville }}</td>
+                    <td>{{ livreur.telephone }}</td>
+
+
+                    <td><a href="{{ path("remove_Livreur",{'id':livreur.id})}}">Supprimer</td>
+
+
+                    <td><a href="{{ path("update_Livreur",{'id':livreur.id})}}">Modifier</td>
+                </tr>
+            {% endfor %}
+
+        </table>
+
+
+    </div>
+
+
+
+    <div class="clearfix"></div>
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,31 @@
+
+
+palette:
+    resource: "@PaletteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+commande:
+    resource: "@CommandeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+admin:
+    resource: "@AdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /user
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+palette_path:
+    resource: "@PaletteBundle/Resources/config/routing/palette.yml"
+    prefix:   /palette
+
+
+
