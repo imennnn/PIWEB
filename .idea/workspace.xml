@@ -13,6 +13,9 @@
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="ff1b4223-a443-4a17-bbbf-5d881ebf6768" />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/link" />
@@ -77,6 +80,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1a5ydN55wn46dSLexZXV5oSbqQB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
